@@ -16,6 +16,6 @@ public class calcuatetip extends AppCompatActivity {
 
         b1=findViewById(R.id.calculate);
         b2.findViewById(R.id.button2);
-        
+
     }
 }
