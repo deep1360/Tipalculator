@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="30dp">
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="127dp"
-
         app:srcCompat="@drawable/logo"
         android:layout_marginTop="50dp"
 
         />
 
 
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bill"/>
 
-    <EditText
+    <TextView
+        android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="100.00"
-        android:inputType="numberDecimal"
-        android:text=" "></EditText>
+        android:text="Total Amount"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  "/>
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tip"
+        android:text="Person"
         android:id="@+id/textview2"
         android:layout_marginTop="20dp"/>
 
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/buttonsub"
+            android:id="@+id/buttonsub1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -61,7 +62,7 @@
             />
 
         <Button
-            android:id="@+id/buttonadd"
+            android:id="@+id/buttonadd1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -74,7 +75,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/calculate"
+        android:id="@+id/calculate1"
         android:layout_marginTop="20dp"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
@@ -87,7 +88,7 @@
         android:textSize="24sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tip" />
+        android:text="Tip per person" />
 
     <TextView
         android:id="@+id/textView5"
@@ -103,7 +104,7 @@
         android:textSize="24sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total" />
+        android:text="Total per person" />
 
     <TextView
         android:id="@+id/textView7"
@@ -112,13 +113,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Press Calculate" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_marginTop="40dp"
-        android:layout_height="wrap_content"
-        android:text="Calculate per person" />
 
 
 </LinearLayout>
