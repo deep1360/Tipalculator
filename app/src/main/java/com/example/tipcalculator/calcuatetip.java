@@ -2,7 +2,9 @@ package com.example.tipcalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class calcuatetip extends AppCompatActivity {
@@ -16,6 +18,21 @@ public class calcuatetip extends AppCompatActivity {
 
         b1=findViewById(R.id.calculate);
         b2.findViewById(R.id.button2);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(calcuatetip.this,Main2Activity.class);
+                startActivity(i);
+            
+            }
+        });
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(calcuatetip.this,Main2Activity.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
