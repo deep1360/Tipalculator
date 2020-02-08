@@ -3,7 +3,11 @@
     <string name="username">username</string>
     <string name="Password">password</string>
     <string name="Login">login</string>
+    <string name="Signup">Signup</string>
     <string name="not_registered">Not Registered ?</string>
     <string name="register"> Register ?</string>
+    <string name="ConfirmPassword">confirmpassword</string>
+    <string name="alreadyregister"> Already Register ?</string>
+
 
 </resources>
