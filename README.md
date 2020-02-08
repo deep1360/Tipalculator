@@ -1,4 +1,4 @@
-# Tipalculator
+# Tip Calculator
 
 
 
