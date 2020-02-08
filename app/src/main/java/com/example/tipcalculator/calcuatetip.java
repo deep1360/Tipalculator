@@ -12,7 +12,7 @@ public class calcuatetip extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.maincal);
+        setContentView(R.layout.activity_calcuatetip);
 
         b1=findViewById(R.id.calculate);
         b2.findViewById(R.id.button2);
