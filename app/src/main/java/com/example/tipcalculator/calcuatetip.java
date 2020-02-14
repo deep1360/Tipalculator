@@ -21,7 +21,7 @@ public class calcuatetip extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(calcuatetip.this,Main2Activity.class);
+                Intent i=new Intent(calcuatetip.this,Main3Activity.class);
                 startActivity(i);
             
             }
@@ -29,7 +29,7 @@ public class calcuatetip extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(calcuatetip.this,Main2Activity.class);
+                Intent i=new Intent(calcuatetip.this,Main3Activity.class);
                 startActivity(i);
             }
         });
