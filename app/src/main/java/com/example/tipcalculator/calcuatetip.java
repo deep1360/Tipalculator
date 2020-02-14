@@ -16,23 +16,29 @@ public class calcuatetip extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calcuatetip);
 
-        b1=findViewById(R.id.calculate);
-        b2.findViewById(R.id.button2);
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i=new Intent(calcuatetip.this,Main3Activity.class);
-                startActivity(i);
-            
-            }
-        });
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i=new Intent(calcuatetip.this,Main3Activity.class);
-                startActivity(i);
-            }
-        });
+     b1=findViewById(R.id.calculate11)  ;
+
+        b2=findViewById(R.id.button11)  ;
+
+     b1.setOnClickListener(new View.OnClickListener()
+    {
+    @Override
+    public void onClick(View v)
+    {
+        Intent i=new Intent(calcuatetip.this,calcuatetip.class);
+        startActivity(i);
+    }
+});
+
+
+     b2.setOnClickListener(new View.OnClickListener()
+     {
+         @Override
+         public void onClick(View v) {
+             Intent i=new Intent(calcuatetip.this,Main3Activity.class);
+             startActivity(i);
+         }
+     });
 
     }
 }

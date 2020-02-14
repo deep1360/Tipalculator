@@ -10,23 +10,23 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText username;
-    EditText password;
+    EditText username1;
+    EditText password1;
     EditText confirmpassword;
     Button signup ;
-    TextView login;
+    TextView login1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registeration);
-        username=findViewById(R.id.username1);
-        password=findViewById(R.id.password1);
+        username1=findViewById(R.id.username1);
+        password1=findViewById(R.id.password1);
         confirmpassword=findViewById(R.id.confirmpassword);
         signup=findViewById(R.id.button1);
-        login=findViewById(R.id.login1);
+        login1=findViewById(R.id.login1);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        login1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(RegisterActivity.this,MainActivity.class);

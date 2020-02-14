@@ -20,7 +20,7 @@
         android:layout_height="40dp"
         android:background="#ffffff"
 
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="70dp"
         android:hint="@string/username" />
 
     <EditText
@@ -67,7 +67,5 @@
             android:textColor="#5F2CBB"
             android:textStyle="bold" />
 
-
-
-    </LinearLayout>
+</LinearLayout>
 </LinearLayout>

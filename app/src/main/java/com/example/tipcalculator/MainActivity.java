@@ -27,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
 
         login = findViewById(R.id.button);
         register=findViewById(R.id.register);
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(MainActivity.this, calcuatetip.class);
+                startActivity(i);
+            }
+        });
+
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
