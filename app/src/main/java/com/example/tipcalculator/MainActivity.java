@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText password;
     Button login;
     TextView register;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
