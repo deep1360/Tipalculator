@@ -19,6 +19,16 @@ public class calcuatetip extends AppCompatActivity {
      b1=findViewById(R.id.calculate11)  ;
 
         b2=findViewById(R.id.button11)  ;
+        
+
+
+
+
+
+
+
+
+
 
      b1.setOnClickListener(new View.OnClickListener()
     {
