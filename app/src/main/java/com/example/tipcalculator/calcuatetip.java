@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import java.lang.Math;
 import java.util.Locale;
 
 public class calcuatetip extends AppCompatActivity {
@@ -54,7 +54,7 @@ add.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
 
-            tippercent--;
+            tippercent++;
             ttip.setText(tippercent + "0");
     }
 });
@@ -72,13 +72,13 @@ add.setOnClickListener(new View.OnClickListener() {
     {
 
         String  bills=bill1.getText().toString();
-        if (bills.equals(""))
+        if (!bills.equals(""))
         {
             billintial=Double.valueOf(bills);
             billintial=billintial*100;
             billintial=Math.round(billintial);
             billintial=billintial/100;
-            bill1.setText(String.format(Locale.US,"0.2f",billintial));
+            bill1.setText(String.format(Locale.getDefault(),"0.2f",billintial));
 
             tipout= (billintial*tippercent)/100;
             tipout=tipout*100;
@@ -86,16 +86,18 @@ add.setOnClickListener(new View.OnClickListener() {
             tipout=tipout/100;
 
 
-            ttip.setText(String.format(Locale.US,"0.2f",tipout));
+            ttip.setText(String.format(Locale.getDefault(),"0.2f",tipout));
+
 
             totalout=billintial +  tipout ;
 
-            tbill.setText(String.format(Locale.US,"0.2f",totalout));
-
+            tbill.setText(String.format(Locale.getDefault(),"0.2f",totalout));
 
         }
         Intent i=new Intent(calcuatetip.this,calcuatetip.class);
         startActivity(i);
+
+
     }
 });
 
