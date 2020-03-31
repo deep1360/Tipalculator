@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "903936807250",
+    "firebase_url": "https://tipcalulator.firebaseio.com",
+    "project_id": "tipcalulator",
+    "storage_bucket": "tipcalulator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903936807250:android:5edb98464eecd9af60aa8b",
+        "android_client_info": {
+          "package_name": "com.example.tipcalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903936807250-4i0ieandok713k2qfbl0o2mnep1v36af.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tipcalculator",
+            "certificate_hash": "c72365656c4368f1ba7d6535dfefe23cad06a80c"
+          }
+        },
+        {
+          "client_id": "903936807250-t4gtld9ehqckf0ith92ulpjpamip1h7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tipcalculator",
+            "certificate_hash": "719e4392770e15681b8785d148c8d6d1c4ac507d"
+          }
+        },
+        {
+          "client_id": "903936807250-bh9baqun6herblbde9iukfidi9md8n5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOXf5wlM6k8_LnLLOAkrw86CZD4vnzWrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903936807250-bh9baqun6herblbde9iukfidi9md8n5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

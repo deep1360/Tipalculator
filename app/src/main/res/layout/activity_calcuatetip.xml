@@ -22,12 +22,13 @@
         android:text="Bill"/>
 
     <EditText
+        android:id="@+id/bill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="100.00"
         android:inputType="numberDecimal"
-        android:text=" "/>
+        android:text="100.00 " />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
