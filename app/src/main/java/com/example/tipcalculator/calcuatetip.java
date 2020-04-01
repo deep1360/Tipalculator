@@ -15,13 +15,13 @@ public class calcuatetip extends AppCompatActivity {
 
     Button b1,b2,sub,add;
     EditText bill1;
-    TextView ttip,tbill;
+    TextView ttip,tbill,totalbill;
 
-
+  double et,tv;
   int tippercent=0;
-  double billintial=100.00;
-  double tipout=0;
-  double totalout=0;
+  double per=100;
+  double tipout;
+  double totalout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +36,7 @@ public class calcuatetip extends AppCompatActivity {
 
         ttip=findViewById(R.id.textview3);
         tbill=findViewById(R.id.textView5);
+        totalbill=findViewById(R.id.textView7);
 
 
 sub.setOnClickListener(new View.OnClickListener() {
@@ -71,34 +72,18 @@ add.setOnClickListener(new View.OnClickListener() {
     public void onClick(View v)
     {
 
-        String  bills=bill1.getText().toString();
-        if (!bills.equals(""))
-        {
-            billintial=Double.valueOf(bills);
-            billintial=billintial*100;
-            billintial=Math.round(billintial);
-            billintial=billintial/100;
-            bill1.setText(String.format(Locale.getDefault(),"0.2f",billintial));
+        et=Double.parseDouble(bill1.getText().toString());
+        tv=Double.parseDouble(ttip.getText().toString());
 
-            tipout= (billintial*tippercent)/100;
-            tipout=tipout*100;
-            tipout=Math.round(tipout);
-            tipout=tipout/100;
+        tipout=(et*tv)/per;
+        totalout=tipout+et;
 
+        totalbill.setText(String.valueOf(totalout));
 
-            ttip.setText(String.format(Locale.getDefault(),"0.2f",tipout));
-
-
-            totalout=billintial +  tipout ;
-
-            tbill.setText(String.format(Locale.getDefault(),"0.2f",totalout));
-
-        }
-        Intent i=new Intent(calcuatetip.this,calcuatetip.class);
-        startActivity(i);
-
+        tbill.setText(String.valueOf(tipout));
 
     }
+
 });
 
 
@@ -106,6 +91,8 @@ add.setOnClickListener(new View.OnClickListener() {
      {
          @Override
          public void onClick(View v) {
+
+ totalbill.getText().toString();
              Intent i=new Intent(calcuatetip.this,Main3Activity.class);
              startActivity(i);
          }
