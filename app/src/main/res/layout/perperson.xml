@@ -1,117 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="390dp"
         android:layout_height="70dp"
-        app:srcCompat="@drawable/logo"
         android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/logo"
 
         />
-
 
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total Amount"/>
+        android:text="Total Amount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
     <TextView
         android:id="@+id/tv2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="  "/>
+        android:layout_height="58dp"
+        android:text="  "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
 
     <TextView
+        android:id="@+id/tv3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="Person"
-        android:id="@+id/tv3"
-        android:layout_marginTop="5dp"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/buttonsub1"
-            android:layout_width="match_parent"
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="-"
-            android:textSize="32dp"
-            style="@style/Widget.AppCompat.Button.Borderless"
-
-            />
-        <TextView
-
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textSize="32sp"
-            android:id="@+id/tv4"
-            android:gravity="center"
-            />
-
-        <Button
-            android:id="@+id/buttonadd1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="+"
-            android:textSize="32dp"
-
-            style="@style/Widget.AppCompat.Button.Borderless"
-
-            />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
     <Button
         android:id="@+id/calculate1"
-        android:layout_marginTop="5dp"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate"/>
+        android:layout_marginTop="5dp"
+        android:text="Calculate" />
 
     <TextView
         android:id="@+id/tv5"
-        android:layout_marginTop="5dp"
-        android:textSize="24sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tip per person" />
+        android:layout_marginTop="5dp"
+        android:text="Tip per person"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tv6"
-        android:layout_marginTop="5dp"
-        android:textSize="24sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="press Calculate" />
+        android:layout_marginTop="5dp"
+        android:text="press Calculate"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tv7"
-        android:layout_marginTop="5dp"
-        android:textSize="24sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total per person" />
+        android:layout_marginTop="5dp"
+        android:text="Total per person"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tv8"
-        android:layout_marginTop="5dp"
-        android:textSize="24sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Press Calculate" />
+        android:layout_marginTop="5dp"
+        android:text="Press Calculate"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TotalTip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Logout" />
+    </LinearLayout>
 
 </LinearLayout>

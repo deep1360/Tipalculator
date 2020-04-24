@@ -13,7 +13,7 @@ import java.util.Locale;
 
 public class calcuatetip extends AppCompatActivity {
 
-    Button b1,b2,sub,add;
+    Button b1,b2,sub,add,log;
     EditText bill1;
     TextView ttip,tbill,totalbill;
 
@@ -28,6 +28,7 @@ public class calcuatetip extends AppCompatActivity {
         setContentView(R.layout.activity_calcuatetip);
 
      b1=findViewById(R.id.calculate11)  ;
+     log=findViewById(R.id.button2);
 
         b2=findViewById(R.id.button11)  ;
         sub=findViewById(R.id.buttonsub);
@@ -61,6 +62,13 @@ add.setOnClickListener(new View.OnClickListener() {
 });
 
 
+log.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent i=new Intent(calcuatetip.this,MainActivity.class);
+        startActivity(i);
+    }
+});
 
 
 
@@ -87,16 +95,25 @@ add.setOnClickListener(new View.OnClickListener() {
 });
 
 
+
      b2.setOnClickListener(new View.OnClickListener()
      {
          @Override
          public void onClick(View v) {
+           String p=  totalbill.getText().toString();
+           String t= tbill.getText().toString();
 
- totalbill.getText().toString();
+
              Intent i=new Intent(calcuatetip.this,Main3Activity.class);
+             i.putExtra("name",p);
+             i.putExtra("tbill",t);
              startActivity(i);
          }
      });
 
+
     }
+
+
+
 }
